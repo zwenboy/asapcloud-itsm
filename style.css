@@ -2,6 +2,9 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Navbar and Sidebar */
+
 #sidebar-wrapper {
     min-height: 100vh;
     margin-left: -15rem;
@@ -58,6 +61,9 @@ i {
     background-color: #1d2124!important;
 }
 
+
+/* Website */
+
 .col-sm {
     margin-top: 25px;
 }
@@ -67,4 +73,8 @@ hr.style {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     margin: 10px 0;
+}
+
+.badge {
+    margin-left: 20px;
 }
