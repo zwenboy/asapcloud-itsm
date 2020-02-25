@@ -48,6 +48,10 @@ i {
     margin-right: 5px;
 }
 
+.fa-plus {
+    margin-right: 0px;
+}
+
 #profile-navbar {
     border-radius: 50%;
     height: 35px;

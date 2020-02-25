@@ -64,7 +64,11 @@
                     <div class="row">
                         <div class="col-sm">
                             <div class="text-center">
-                                <h3>My Incidents</h3>
+                                <h3>Incidents
+                                    <button id="modalButton" type="button" class="btn" data-toggle="modal" data-target="#newItemModal" data-section="Incident">
+                                        <i class="fas fa-plus fa-xs"></i>
+                                      </button>
+                                </h3>
                             </div>
                             <hr class="style" />
                             <div class="alert alert-danger" role="alert">
@@ -82,7 +86,11 @@
                         </div>
                         <div class="col-sm">
                             <div class="text-center">
-                                <h3>My Service Requests</h3>
+                                <h3>Service Requests
+                                    <button id="modalButton" type="button" class="btn" data-toggle="modal" data-target="#newItemModal" data-section="Service Request">
+                                        <i class="fas fa-plus fa-xs"></i>
+                                      </button>
+                                </h3>
                             </div>
                             <hr class="style" />
                             <div class="alert alert-success" role="alert">
@@ -92,9 +100,13 @@
                         </div>
                         <div class="col-sm">
                             <div class="text-center">
-                                <h3>My Change Requests</h3>
+                                <h3>Change Requests
+                                    <button id="modalButton" type="button" class="btn" data-toggle="modal" data-target="#newItemModal" data-section="Change Request">
+                                        <i class="fas fa-plus fa-xs"></i>
+                                      </button>
+                                </h3>
                             </div>
-                            <hr class="style" />
+                            <hr class="style">
                             <div class="alert alert-warning" role="alert">
                                 <h5 class="alert-heading">Ticket <em><strong>KVZ9SU</strong></em><span class="badge badge-warning">In progress</span></h5>
                                 <p class="mb-0 small">Change: <em><strong>Upgrade plan</strong></em>, Category: <em><strong>Billing</strong></em></p>
@@ -102,6 +114,48 @@
                             <div class="alert alert-success" role="alert">
                                 <h5 class="alert-heading">Ticket <em><strong>I5URW5</strong></em><span class="badge badge-success">Accepted</span></h5>
                                 <p class="mb-0 small">Change: <em><strong>Billing address</strong></em>, Category: <em><strong>Billing</strong></em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="newItemModal" tabindex="-1" role="dialog" aria-labelledby="newItemModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="newItemModalLongTitle">Undefined</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="headerFormControlInput">Subject</label>
+                                        <input type="text" class="form-control" id="headerFormControlInput" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bodyFormControlTextarea">Message</label>
+                                        <textarea class="form-control" id="bodyFormControlTextarea" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="categoryFormControlSelect">Category</label>
+                                        <select class="form-control" id="categoryFormControlSelect">
+                                            <option>Category1</option>
+                                            <option>Category2</option>
+                                            <option>Category3</option>
+                                            <option>Category4</option>
+                                            <option>Category5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="idFormControlInput">ID:</label>
+                                        <input id="itemID" type="text" class="form-control" id="idFormControlInput" placeholder="" readonly>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -115,6 +169,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="scripts/sidebarHandler.js"></script>
+    <script src="scripts/modalHandler.js"></script>
 </body>
 
 </html>
