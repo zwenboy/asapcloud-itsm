@@ -68,6 +68,13 @@ i {
 
 /* Website */
 
+.item-list {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+
 .alert {
     cursor: pointer;
     transition: all .2s ease-in-out;
