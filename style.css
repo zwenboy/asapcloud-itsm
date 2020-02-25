@@ -119,8 +119,8 @@ hr.style {
 /* Upgrade */
 
 #page-content-wrapper {
-    background: rgb(230, 130, 0);
-    background: linear-gradient(to right, rgb(230, 130, 0), rgb(255, 92, 51));
+    background: rgb(164, 207, 226);
+    background: linear-gradient(to right, rgb(164, 207, 226), rgb(153, 176, 187))
 }
 
 .pricing .card {
