@@ -194,3 +194,28 @@ hr.style {
         opacity: 1;
     }
 }
+
+
+/* Hub */
+
+
+/* Charts */
+
+#incident-chart {
+    max-width: 425px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#incident-pie {
+    max-width: 425px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+canvas {
+    display: block;
+    float: left;
+}
