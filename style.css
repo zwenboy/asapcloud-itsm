@@ -66,13 +66,17 @@ i {
 }
 
 
-/* Website */
+/* Tickets */
 
 .item-list {
     background-color: white;
     border-radius: 15px;
     padding: 15px;
     margin: 15px;
+}
+
+.ticket-info:hover {
+    text-decoration: none;
 }
 
 .alert {
