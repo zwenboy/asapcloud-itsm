@@ -70,9 +70,10 @@ i {
 
 .item-list {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 15px;
     margin: 15px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .ticket-info:hover {
@@ -123,8 +124,9 @@ hr.style {
 /* Upgrade */
 
 #page-content-wrapper {
-    background: rgb(164, 207, 226);
-    background: linear-gradient(to right, rgb(164, 207, 226), rgb(153, 176, 187))
+    /* background: rgb(164, 207, 226);
+    background: linear-gradient(to right, rgb(164, 207, 226), rgb(153, 176, 187)) */
+    background: rgb(238, 238, 238);
 }
 
 .pricing .card {
