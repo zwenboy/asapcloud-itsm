@@ -6,7 +6,8 @@ setTicketInfo(urlParams.get('id'));
 function setTicketInfo(id) {
     if (id == null) {
         window.location = "https://asapcloud.netlify.com/tickets";
+    } else {
+        document.title = id + " - ITSM";
+        document.getElementById("ticketIdTitle").innerHTML = 'Ticket ' + id;
     }
-    document.title = id + " - ITSM";
-    document.getElementById("ticketIdTitle").innerHTML = 'Ticket ' + id;
 }
